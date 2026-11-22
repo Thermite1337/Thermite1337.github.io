@@ -12,7 +12,6 @@
 
   <style>
 
-	/* OBS, den här sidan är "kodad" med CGPT som faaan för jag kan inte 	koda for shit, gillar du inte html-gore så vet du vart dörren är */
 
     /* Tar bort allt standardskräp */
     * {
@@ -34,7 +33,7 @@
       background-image: url('https://live.staticflickr.com/65535/55252507585_53359864ce_h.jpg');
 
       background-size: cover;
-      background-position: center;
+      background-position: 20% 50%;
       background-repeat: no-repeat;
     }
 
@@ -49,31 +48,31 @@
       text-shadow: 0 0 10px black;
     }
 
-    /* Text 1 */
+	  /* Text 1 */
     .title {
-      top: 12%;
+      top: 10%;
       left: 8%;
 
-      font-size: 3rem;
+      font-size: clamp(2.0rem, 8vw, 3.5rem);
       font-weight: 700;
-    }
+}
 
     /* Text 2 */
     .text2 {
       bottom: 10%;
       left: 10%;
 
-      font-size: 1.5rem;
+      font-size: clamp(1.0rem, 3vw, 1.5rem);
       font-weight: 300;
       max-width: 500px;
     }
 
     /* Text 3 */
     .text3 {
-      bottom: 10%;
-      right: 8%;
+      bottom: 5%;
+      right: 5%;
 
-      font-size: 1.5rem;
+      font-size: clamp(1.0rem, 2vw, 1.5rem);
       font-weight: 300;
     }
 
