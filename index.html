@@ -12,8 +12,6 @@
 
   <style>
 
-	/* OBS, observera*/
-
     /* Tar bort allt standardskräp */
     * {
       margin: 0;
@@ -23,22 +21,34 @@
 
     /* Hela sidan */
     body {
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      min-height: 100vh;
 
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
 
       font-family: 'Montserrat', sans-serif;
+    }
 
-      /* Bakgrundsbild från internet */
-      background-image: url('https://live.staticflickr.com/65535/55252507585_53359864ce_h.jpg');
+    .section {
+      width: 100%;
+      height: 100vh;
+      position: relative;
 
       background-size: cover;
-      background-position: 13% 50%;
       background-repeat: no-repeat;
-      }
+    }
 
-    /* Gemensam stil för all text */
+    .section1 {
+      background-image: url('https://live.staticflickr.com/65535/55252507585_53359864ce_h.jpg');
+      background-position: 13% 50%;
+    }
+
+    .section2 {
+      background-image: url('viggen1.png');
+      background-position: 90% 50%;
+    }
+
     .text {
       position: absolute;
 
@@ -56,17 +66,17 @@
 
       font-size: clamp(2.0rem, 8vw, 3.5rem);
       font-weight: 700;
-}
+    }
 
-/* Mobil */
-@media (max-width: 900px) {
-    .title {
+    /* Mobil */
+    @media (max-width: 900px) {
+      .title {
         top: 10%;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
+      }
     }
-}
 
     /* Text 2 */
     .text2 {
@@ -89,23 +99,49 @@
 
   </style>
 </head>
+
 <body>
 
+  <!-- SEKTION 1 -->
+  <section class="section section1">
 
-  <!-- Stor rubrik -->
-  <a class="text title" href="http://stridsflygplan.se" style="text-decoration:none">Stridsflygplan.se
+    <!-- Stor rubrik -->
+    <a class="text title" href="http://stridsflygplan.se" style="text-decoration:none">
+      Stridsflygplan.se
+    </a>
 
-  </a>
+    <!-- Text -->
+    <div class="text text2">
+      JAS 39 Gripen - Är ett lättviktigt multiroll stridsflygplan designat för att verka ur svåråtkomliga miljöer med begränsade resurser för underhåll.
+    </div>
 
-  <!-- Text -->
-  <div class="text text2">
-    JAS 39 Gripen - Är ett lättviktigt multiroll stridsflygplan designat för att verka ur svåråtkomliga miljöer med begränsade resurser för underhåll.
-  </div>
+    <!-- Fotograf -->
+    <a class="text text3" href="https://www.flickr.com/photos/24874528@N04/" target="_blank" rel="noopener noreferrer">
+      © Airwolfhound
+    </a>
 
-  <!-- Text -->
-  <a class="text text3" href="https://www.flickr.com/photos/24874528@N04/" target="_blank" rel="noopener noreferrer">
-    ©Airwolfhound
-</a>
+  </section>
+
+
+  <!-- SEKTION 2 -->
+  <section class="section section2">
+
+    <!-- Stor rubrik -->
+    <h1 class="text title">
+      Viggen
+    </h1>
+
+    <!-- Text -->
+    <div class="text text2">
+      
+    </div>
+
+    <!-- Fotograf -->
+    <a class="text text3" href="https://brand.saab.com/point/en/saab/media?search[]=viggen&tab=assets&searchMethod=STANDARD&sort=score" target="_blank" rel="noopener noreferrer">
+      © Saab AB
+    </a>
+
+  </section>
 
 </body>
 </html>
