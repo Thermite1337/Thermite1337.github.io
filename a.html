@@ -1,10 +1,151 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Stridsflygplan.se</title>
-    </head>
-    <body>
-        <a>test</a>
+<html lang="sv">
+<head>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </body>
-    </html>
+  <title>Stridsflygplan.se</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    /* Tar bort allt standardskräp */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Hela sidan */
+    body {
+      width: 100%;
+      min-height: 100vh;
+
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Gemensam stil för sektioner */
+    .section {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    /* SEKTION 1 */
+    .section1 {
+      background-image: url('https://live.staticflickr.com/65535/55252507585_53359864ce_h.jpg');
+      background-position: 13% 50%;
+    }
+
+    /* SEKTION 2 */
+    .section2 {
+      background-image: url('DIN-ANDRA-BILD-HÄR.jpg');
+      background-position: 50% 50%;
+    }
+
+    /* Gemensam stil för all text */
+    .text {
+      position: absolute;
+
+      color: white;
+
+      opacity: 0.7;
+
+      text-shadow: 0 0 10px black;
+    }
+
+    /* Text 1 */
+    .title {
+      top: 10%;
+      left: 8%;
+
+      font-size: clamp(2.0rem, 8vw, 3.5rem);
+      font-weight: 700;
+    }
+
+    /* Mobil */
+    @media (max-width: 900px) {
+      .title {
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+    }
+
+    /* Text 2 */
+    .text2 {
+      bottom: 10%;
+      left: 10%;
+
+      font-size: clamp(1.0rem, 3vw, 1.5rem);
+      font-weight: 300;
+      max-width: 500px;
+    }
+
+    /* Text 3 */
+    .text3 {
+      bottom: 5%;
+      right: 5%;
+
+      font-size: clamp(1.0rem, 2vw, 1.5rem);
+      font-weight: 300;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- SEKTION 1 -->
+  <section class="section section1">
+
+    <!-- Stor rubrik -->
+    <a class="text title" href="http://stridsflygplan.se" style="text-decoration:none">
+      Stridsflygplan.se
+    </a>
+
+    <!-- Text -->
+    <div class="text text2">
+      JAS 39 Gripen - Är ett lättviktigt multiroll stridsflygplan designat för att verka ur svåråtkomliga miljöer med begränsade resurser för underhåll.
+    </div>
+
+    <!-- Fotograf -->
+    <a class="text text3" href="https://www.flickr.com/photos/24874528@N04/" target="_blank" rel="noopener noreferrer">
+      ©Airwolfhound
+    </a>
+
+  </section>
+
+
+  <!-- SEKTION 2 -->
+  <section class="section section2">
+
+    <!-- Stor rubrik -->
+    <h1 class="text title">
+      DIN NYA RUBRIK HÄR
+    </h1>
+
+    <!-- Text -->
+    <div class="text text2">
+      DIN NYA BESKRIVNING HÄR
+    </div>
+
+    <!-- Fotograf -->
+    <div class="text text3">
+      DIN FOTOGRAF HÄR
+    </div>
+
+  </section>
+
+</body>
+</html>
